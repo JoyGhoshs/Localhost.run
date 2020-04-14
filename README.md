@@ -11,5 +11,12 @@ Expose Your Localhost Over Internet in a Zipphy
   
 ![Localhost](https://i.ibb.co/tHCZHHL/images55252.png)<br/>
 <code>
+  Installation
+  - git clone https://github.com/JoyGhoshs/Localhost.run
+  - cd Localhost.run
+  - chmod +x localhost.sh
+  - ./localhost.sh
+  </code>
+<code>
 Email : Joychondroghosh@gmail.com
   </coder>
