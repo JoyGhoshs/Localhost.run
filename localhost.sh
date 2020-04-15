@@ -17,16 +17,16 @@ read -p "Enter Port Of Your Localhost--> " po
 read -p "Enter an random-string for Generating Subdomains --> " sub
 ok=200
 resp=$(curl -s -o /dev/null -I -w "%{http_code}" localhost:$po)
-echo "$yellow<-------------------------------------------------------------------->$white"
-echo "Cheaking If LocalHost Is Running Or Not"
+echo -e "$yellow<-------------------------------------------------------------------->$white"
+echo "Cheaking If LocalHost Is Running Or Not/"
+echo "----------------------------------------"
 if [ $ok == $resp ]
 then
 echo -e "Localhost $green Running $white"
 ssh -R 80:localhost:$po $sub@ssh.localhost.run
 else
-echo -e "Localhost $red Not Running $white start localhost service an execute script"
+echo -e "Localhost $red Not Running $white"
 echo "exiting"
 exit
 fi
-
 
